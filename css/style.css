@@ -1,0 +1,131 @@
+:root {
+  --color-primary: '';
+}
+
+body {
+  color: var(--color-primary);
+  background-color: rgba(211, 178, 157, 0.979);
+}
+
+body p {
+  background: #3e4e92;
+}
+
+body a {
+  color: red;
+}
+
+body div {
+  border: 2px solid #ff7b00;
+}
+
+body div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.myclass div {
+  background-color: #9c9c4c;
+  color: orange;
+}
+
+.myclass:hover {
+  color: green;
+}
+
+.warning {
+  border-radius: 6px;
+  border-color: orange;
+  border-width: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  width: 960px;
+  background-color: rgba(245, 224, 209, 0.884);
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+@media only screen and (max-width: 960px) {
+  .warning {
+    width: auto;
+    max-width: 960px;
+  }
+}
+
+.warning:hover, .critical-error:hover {
+  background-color: white;
+  color: #ffc966;
+}
+
+.error, .critical-error {
+  color: red;
+}
+
+.critical-error {
+  border: 1px solid red;
+  background-color: orangered;
+  font-weight: bold;
+  padding: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.col-1 {
+  width: 16px;
+  background-color: blue;
+  padding: 0px;
+  height: 20px;
+}
+
+.col-1:last-child {
+  background-color: yellow;
+}
+
+.col-2 {
+  width: 32px;
+  background-color: #2eeb92;
+  padding: 0px;
+  height: 20px;
+}
+
+.col-2:last-child {
+  background-color: yellow;
+}
+
+.col-3 {
+  width: 48px;
+  background-color: #d69f06;
+  padding: 0px;
+  height: 20px;
+}
+
+.col-3:last-child {
+  background-color: yellow;
+}
+
+.col-4 {
+  width: 64px;
+  background-color: #be293d;
+  padding: 0px;
+  height: 20px;
+}
+
+.col-4:last-child {
+  background-color: yellow;
+}
+
+.col-5 {
+  width: 80px;
+  background-color: #ee25c2;
+  padding: 0px;
+  height: 20px;
+}
+
+.col-5:last-child {
+  background-color: yellow;
+}

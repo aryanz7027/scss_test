@@ -1,0 +1,64 @@
+@mixin warning($width: auto,$text-color: white) {
+    border: {
+        radius: 6px;
+        color: $text-color;
+        width: 1px;    
+    }
+    font: {
+        size: 18px;
+        weight: bold;
+        style: italic;
+    }
+    @if  $text-color == orange {
+        color: white;
+    } 
+    @else if $text-color == blue {
+        color: blue;
+    } 
+    @else {
+        color: red;
+    }
+    padding: 10px;
+    margin: 5px;
+    width: 960px;
+    background-color: rgba(245, 224, 209, 0.884);
+    transition: background-color 1s;
+    @include large-screen{
+        width: auto;
+        max-width: 960px;
+    }
+}
+
+@mixin large-screen {
+    @media only screen and (max-width: 960px) {
+        @content;
+    }
+}
+
+// This below mixin helps to add more refined style properties specific to a copmany (company based requirements)
+@mixin engagedly($company-name: 'default') {
+    @if $company-name == 'engagedly'{
+        @content;
+        div{
+            border: 2px solid rgb(255, 123, 0);
+        }
+    }
+}
+
+@mixin redhat($company-name: 'default') {
+    @if $company-name == 'redhat'{
+        @content;
+        div{
+            border: 2px solid rgb(231, 47, 15);
+        }
+    }
+}
+
+@mixin default($company-name: 'default') {
+    @if $company-name == 'default'{
+        @content;
+        div{
+            border: 2px solid rgb(194, 57, 199);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+$text-color: #1286f3;
+$var-text-color: var(--color-primary);
+$link-color: red;
+$color-orange: orange;
+$default-body-color: rgb(202, 196, 196);
+$company-name: 'engagedly';
+$comp-list: (engagedly: ('background-color': rgba(211, 178, 157, 0.979)), default: ('background-color': $default-body-color), redhat: ( 'background-color': rgb(250, 134, 134)) );
+$col-list: ('col-1': ('background-color': blue, width: 1), 'col-2': ('background-color': rgb(46, 235, 146), width: 2), 'col-3': ('background-color': rgb(214, 159, 6), 'width': 3), 'col-4': ('background-color': rgb(190, 41, 61), 'width': 4), 'col-5': ('background-color': rgb(238, 37, 194), 'width': 5))
